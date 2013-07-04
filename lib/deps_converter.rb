@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby
 
 class DepsConverter
+  SCOPES = ['compile', 'test', 'runtime', 'provided']
+
   def initialize
     @debug_enabled = false
   end
@@ -14,7 +16,7 @@ class DepsConverter
 
     debug @versions
 
-    output_version_map
+    output_version_maps
 
     puts
 
@@ -25,20 +27,12 @@ class DepsConverter
   private
 
   def group_location(dep)
-    "depVersions['#{dep[:group_id]}']"
+    "#{dep[:scope]}DepVersions['#{dep[:group_id]}']"
   end
 
   def version_location(dep)
     "#{group_location(dep)}['#{dep[:artifact_id]}']"
 
-  end
-
-  def make_name(name)
-    camel_case name.gsub(/[\.\-]/, "_")
-  end
-
-  def camel_case(phrase)
-    phrase.downcase.gsub(/_([a-z])/) { |a| a.upcase }.gsub('_', '')
   end
 
   def build_deps(deps_filename)
@@ -79,25 +73,41 @@ class DepsConverter
   def build_versions
     @versions = {}
     @deps.each do |dep|
-      group = @versions[dep[:group_id]]
+      scope = @versions[dep[:scope]]
+
+      if !scope
+        scope = {}
+        @versions[dep[:scope]] = scope
+      end
+
+      group = scope[dep[:group_id]]
 
       if !group
         group = {}
-        @versions[dep[:group_id]] = group
+        scope[dep[:group_id]] = group
       end
 
-      group[dep[:artifact_id]] = dep[:version]
+      group[dep[:artifact_id]] = dep
     end
 
     @versions
   end
 
-  def output_version_map
-    print 'def depVersions = ['
+  def output_version_maps
+    SCOPES.each do |scope|
+      output_version_map_for_scope(scope)
+      puts
+    end
+  end
+
+  def output_version_map_for_scope(scope)
+    print "def #{scope}DepVersions = ["
 
     first_group = true
 
-    @versions.keys.sort.each do |group_id|
+    versions_for_scope = @versions[scope]
+
+    versions_for_scope.keys.sort.each do |group_id|
       if first_group
         puts
         first_group = false
@@ -109,7 +119,7 @@ class DepsConverter
 
       first_version = true
 
-      @versions[group_id].each_pair do |artifact_id, version|
+      versions_for_scope[group_id].each_pair do |artifact_id, dep|
         if first_version
           puts
         else
@@ -118,11 +128,11 @@ class DepsConverter
 
         first_version = false
 
-        print "    '#{artifact_id}' : '#{version}'"
+        print "    '#{artifact_id}' : '#{dep[:version]}'"
       end
 
       puts
-      print "  ]"
+      print '  ]'
     end
 
     puts
@@ -132,8 +142,7 @@ class DepsConverter
   def output_dependencies
     puts 'dependencies {'
     
-    ['compile', 'test', 'runtime', 'provided'].each do |scope| 
-
+    SCOPES.each do |scope|
       output_dependencies_for_scope(scope)
     end
 
@@ -143,14 +152,22 @@ class DepsConverter
   def output_dependencies_for_scope(scope)
     configuration = translate_dependency_configuration(scope)
 
-    @deps.select { |dep| dep[:scope] == scope }.each do |dep|
-      configuration = translate_dependency_configuration(dep[:scope])
+    versions_for_scope = @versions[scope]
 
-      print "  #{configuration} group: '#{dep[:group_id]}', name: '#{dep[:artifact_id]}', " +
-                "version: #{version_location(dep)}"
+    versions_for_scope.keys.sort.each do |group_id|
+      artifacts_for_group = versions_for_scope[group_id]
 
-      if dep[:classifier]
-        print ", classifier: '#{dep[:classifier]}'"
+      artifacts_for_group.keys.sort.each do |artifact_id|
+        dep = artifacts_for_group[artifact_id]
+
+        print "  #{configuration} group: '#{group_id}', name: '#{artifact_id}', " +
+                  "version: #{version_location(dep)}"
+
+        if dep[:classifier]
+          print ", classifier: '#{dep[:classifier]}'"
+        end
+
+        puts
       end
 
       puts
