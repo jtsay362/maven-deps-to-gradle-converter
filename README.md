@@ -19,6 +19,7 @@ Takes the top section of "mvn -X compile" output like this:
 
 
 And turns it into:
+
     def compileDepVersions = [
       'commons-beanutils' : [
        'commons-beanutils' : '1.8.3'
