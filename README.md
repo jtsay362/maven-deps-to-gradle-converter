@@ -50,3 +50,12 @@ And turns it into:
 
       compile group: 'commons-collections', name: 'commons-collections', version: compileDepVersions['commons-collections']['commons-collections']
     }
+
+To run the example:
+
+    lib/dep_converter test/data/deps.txt
+
+You can create your own input file by running "mvn -X compile", selecting the top dependency section, and saving it to
+a file.
+
+Feedback and improvements welcome!
