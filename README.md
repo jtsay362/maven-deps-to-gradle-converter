@@ -49,11 +49,17 @@ And turns it into:
       compile group: 'commons-codec', name: 'commons-codec', version: compileDepVersions['commons-codec']['commons-codec']
 
       compile group: 'commons-collections', name: 'commons-collections', version: compileDepVersions['commons-collections']['commons-collections']
+
+      ...
+
+      testCompile group: 'org.scalatest', name: 'scalatest_2.9.3', version: testDepVersions['org.scalatest']['scalatest_2.9.3']
+
+      testCompile group: 'org.specs2', name: 'specs2_2.9.3', version: testDepVersions['org.specs2']['specs2_2.9.3']
     }
 
 To run the example:
 
-    lib/dep_converter test/data/deps.txt
+    lib/dep_converter.rb test/data/deps.txt
 
 You can create your own input file by running "mvn -X compile", selecting the top dependency section, and saving it to
 a file.
