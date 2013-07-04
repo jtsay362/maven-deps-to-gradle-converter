@@ -1,0 +1,698 @@
+Apache Maven 3.0.5 (r01de14724cdef164cd33c7c8c2fe155faf9602da; 2013-02-19 05:51:28-0800)
+Maven home: /home/jtsay/devtools/apache-maven-3.0.5
+Java version: 1.7.0_15, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-7-openjdk-amd64/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "3.5.0-17-generic", arch: "amd64", family: "unix"
+[INFO] Error stacktraces are turned on.
+[DEBUG] Reading global settings from /home/jtsay/devtools/apache-maven-3.0.5/conf/settings.xml
+[DEBUG] Reading user settings from /home/jtsay/.m2/settings.xml
+[DEBUG] Using local repository at /home/jtsay/.m2/repository
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10 for /home/jtsay/.m2/repository
+[INFO] Scanning for projects...
+[DEBUG] Failure to find com.ngweb:scala-parent:0.0.3-SNAPSHOT/maven-metadata.xml in http://repo.springsource.org/snapshot was cached in the local repository, resolution will not be reattempted until the update interval of org.springframework.maven.snapshot has elapsed or updates are forced
+[DEBUG] Failure to find com.ngweb:scala-parent:0.0.3-SNAPSHOT/maven-metadata.xml in http://repository.jboss.org/nexus/content/groups/public-jboss was cached in the local repository, resolution will not be reattempted until the update interval of repository.jboss.com has elapsed or updates are forced
+[DEBUG] Failure to find com.ngweb:scala-parent:0.0.3-SNAPSHOT/maven-metadata.xml in http://mvnrepository.googlecode.com/svn/repo was cached in the local repository, resolution will not be reattempted until the update interval of googlecode.com has elapsed or updates are forced
+[DEBUG] Failure to find com.ngweb:parent:0.0.2-SNAPSHOT/maven-metadata.xml in http://repo.springsource.org/snapshot was cached in the local repository, resolution will not be reattempted until the update interval of org.springframework.maven.snapshot has elapsed or updates are forced
+[DEBUG] Failure to find com.ngweb:parent:0.0.2-SNAPSHOT/maven-metadata.xml in http://repository.jboss.org/nexus/content/groups/public-jboss was cached in the local repository, resolution will not be reattempted until the update interval of repository.jboss.com has elapsed or updates are forced
+[DEBUG] Failure to find com.ngweb:parent:0.0.2-SNAPSHOT/maven-metadata.xml in http://mvnrepository.googlecode.com/svn/repo was cached in the local repository, resolution will not be reattempted until the update interval of googlecode.com has elapsed or updates are forced
+[DEBUG] Extension realms for project com.ngweb.sideref:pwnsearch:jar:1.0-SNAPSHOT: (none)
+[DEBUG] Looking up lifecyle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.ngweb.sideref:pwnsearch:jar:1.0-SNAPSHOT
+[WARNING] 'parent.relativePath' points at com.ngweb.sideref:jmdict-common instead of com.ngweb:scala-parent, please verify your project structure @ line 5, column 11
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: com.ngweb.sideref:pwnsearch:jar:1.0-SNAPSHOT
+[DEBUG] Tasks:   [compile]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building pwnsearch Webapp 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       com.ngweb.sideref:pwnsearch:1.0-SNAPSHOT
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [compile, test]
+[DEBUG] Repositories (dependencies): [org.springframework.maven.snapshot (http://repo.springsource.org/snapshot, snapshots), org.springframework.maven.milestone (http://repo.springsource.org/milestone, releases), repository.jboss.com (http://repository.jboss.org/nexus/content/groups/public-jboss, releases+snapshots), googlecode.com (http://mvnrepository.googlecode.com/svn/repo, releases+snapshots), Grails Maven Repository (http://repo.grails.org/grails/libs-releases, releases), central (http://repo.maven.apache.org/maven2, releases)]
+[DEBUG] Repositories (plugins)     : [oss.sonatype.org-github-releases (http://oss.sonatype.org/content/repositories/github-releases, releases+snapshots), central (http://repo.maven.apache.org/maven2, releases)]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-enforcer-plugin:1.0.1:enforce (enforce-versions)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <fail default-value="true">${enforcer.fail}</fail>
+  <failFast default-value="false">${enforcer.failFast}</failFast>
+  <ignoreCache default-value="false">${enforcer.ignoreCache}</ignoreCache>
+  <project>${project}</project>
+  <rules>
+    <requireMavenVersion>
+      <version>[3.0.3,)</version>
+    </requireMavenVersion>
+    <requireJavaVersion>
+      <version>1.7</version>
+    </requireJavaVersion>
+  </rules>
+  <session>${session}</session>
+  <skip default-value="false">${enforcer.skip}</skip>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.codehaus.mojo:properties-maven-plugin:1.0-alpha-2:read-project-properties (default)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <files>
+    <file>/home/jtsay/projects/sideref/pwnsearch/build_config/profile/postgresql-devel-jdbc.properties</file>
+    <file>/home/jtsay/projects/sideref/pwnsearch/build_config/profile/h2-test-jdbc.properties</file>
+    <file>/home/jtsay/projects/sideref/pwnsearch/build_config/profile/BasicDataSource.properties</file>
+    <file>/home/jtsay/projects/sideref/pwnsearch/build_config/profile/SesMail.properties</file>
+  </files>
+  <project default-value="${project}"/>
+  <quiet default-value="false"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.5:resources (default-resources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+  <project default-value="${project}"/>
+  <resources default-value="${project.resources}"/>
+  <session default-value="${session}"/>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.zeroturnaround:jrebel-maven-plugin:1.1.1:generate (generate-rebel-xml)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addResourcesDirToRebelXml default-value="false"/>
+  <alwaysGenerate default-value="false"/>
+  <classesDirectory>${project.build.outputDirectory}</classesDirectory>
+  <packaging>${project.packaging}</packaging>
+  <project>${project}</project>
+  <rebelXmlDirectory default-value="${project.build.outputDirectory}">${rebel.xml.dir}</rebelXmlDirectory>
+  <relativePath default-value="."/>
+  <rootPath default-value="${basedir}"/>
+  <showGenerated default-value="false">${rebel.generate.show}</showGenerated>
+  <warSourceDirectory>${basedir}/src/main/webapp</warSourceDirectory>
+  <webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.0:compile (default-compile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <classpathElements default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.compileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution>${mojoExecution}</mojoExecution>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <projectArtifact default-value="${project.artifact}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.5">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.5">${maven.compiler.target}</target>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+  <mavenSession default-value="${session}"/>
+  <session default-value="${session}"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          net.alchim31.maven:scala-maven-plugin:3.1.4:compile (default)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addJavacArgs>${addJavacArgs}</addJavacArgs>
+  <addScalacArgs>${addScalacArgs}</addScalacArgs>
+  <addZincArgs>${addZincArgs}</addZincArgs>
+  <analysisCacheFile default-value="${project.build.directory}/analysis/compile">${analysisCacheFile}</analysisCacheFile>
+  <args>
+    <arg>-make:transitive</arg>
+    <arg>-dependencyfile</arg>
+    <arg>/home/jtsay/projects/sideref/pwnsearch/target/.scala_dependencies</arg>
+  </args>
+  <checkMultipleScalaVersions default-value="true">${maven.scala.checkConsistency}</checkMultipleScalaVersions>
+  <compileOrder default-value="mixed">${compileOrder}</compileOrder>
+  <displayCmd default-value="false">${displayCmd}</displayCmd>
+  <encoding>${project.build.sourceEncoding}</encoding>
+  <failOnMultipleScalaVersions default-value="false"/>
+  <forceUseArgFile default-value="false"/>
+  <fork default-value="true"/>
+  <javacArgs>${javacArgs}</javacArgs>
+  <javacGenerateDebugSymbols default-value="true">${javacGenerateDebugSymbols}</javacGenerateDebugSymbols>
+  <localRepo>${localRepository}</localRepo>
+  <localRepository>${localRepository}</localRepository>
+  <notifyCompilation default-value="true">${notifyCompilation}</notifyCompilation>
+  <outputDir>${project.build.outputDirectory}</outputDir>
+  <pluginArtifacts default-value="${plugin.artifacts}"/>
+  <project>${project}</project>
+  <reactorProjects default-value="${reactorProjects}"/>
+  <recompileMode default-value="all">incremental</recompileMode>
+  <remoteRepos>${project.remoteArtifactRepositories}</remoteRepos>
+  <scalaClassName default-value="scala.tools.nsc.Main">${maven.scala.className}</scalaClassName>
+  <scalaHome>${scala.home}</scalaHome>
+  <scalaVersion>${scala.version}</scalaVersion>
+  <sendJavaToScalac default-value="true"/>
+  <session>${session}</session>
+  <source>${maven.compiler.source}</source>
+  <sourceDir>${project.build.sourceDirectory}/../scala</sourceDir>
+  <target>${maven.compiler.target}</target>
+  <useCanonicalPath default-value="true">${maven.scala.useCanonicalPath}</useCanonicalPath>
+  <useZincServer default-value="false">${useZincServer}</useZincServer>
+  <zincPort default-value="3030">${zincPort}</zincPort>
+</configuration>
+[DEBUG] =======================================================================
+[DEBUG] Failure to find com.ngweb:ngweb-commons:1.0-SNAPSHOT/maven-metadata.xml in http://repo.springsource.org/snapshot was cached in the local repository, resolution will not be reattempted until the update interval of org.springframework.maven.snapshot has elapsed or updates are forced
+[DEBUG] Failure to find com.ngweb:ngweb-commons:1.0-SNAPSHOT/maven-metadata.xml in http://repository.jboss.org/nexus/content/groups/public-jboss was cached in the local repository, resolution will not be reattempted until the update interval of repository.jboss.com has elapsed or updates are forced
+[DEBUG] Failure to find com.ngweb:ngweb-commons:1.0-SNAPSHOT/maven-metadata.xml in http://mvnrepository.googlecode.com/svn/repo was cached in the local repository, resolution will not be reattempted until the update interval of googlecode.com has elapsed or updates are forced
+[DEBUG] Failure to find com.ngweb:ngweb-commons:1.0-SNAPSHOT/maven-metadata.xml in http://repo.springsource.org/snapshot was cached in the local repository, resolution will not be reattempted until the update interval of org.springframework.maven.snapshot has elapsed or updates are forced
+[DEBUG] Failure to find com.ngweb:ngweb-commons:1.0-SNAPSHOT/maven-metadata.xml in http://repository.jboss.org/nexus/content/groups/public-jboss was cached in the local repository, resolution will not be reattempted until the update interval of repository.jboss.com has elapsed or updates are forced
+[DEBUG] Failure to find com.ngweb:ngweb-commons:1.0-SNAPSHOT/maven-metadata.xml in http://mvnrepository.googlecode.com/svn/repo was cached in the local repository, resolution will not be reattempted until the update interval of googlecode.com has elapsed or updates are forced
+[DEBUG] Failure to find com.ngweb:parent:0.0.2-SNAPSHOT/maven-metadata.xml in http://repo.springsource.org/snapshot was cached in the local repository, resolution will not be reattempted until the update interval of org.springframework.maven.snapshot has elapsed or updates are forced
+[DEBUG] Failure to find com.ngweb:parent:0.0.2-SNAPSHOT/maven-metadata.xml in http://repository.jboss.org/nexus/content/groups/public-jboss was cached in the local repository, resolution will not be reattempted until the update interval of repository.jboss.com has elapsed or updates are forced
+[DEBUG] Failure to find com.ngweb:parent:0.0.2-SNAPSHOT/maven-metadata.xml in http://mvnrepository.googlecode.com/svn/repo was cached in the local repository, resolution will not be reattempted until the update interval of googlecode.com has elapsed or updates are forced
+[DEBUG] Could not find metadata org.springframework.social:spring-social-core:1.1.0.BUILD-SNAPSHOT/maven-metadata.xml in local (/home/jtsay/.m2/repository)
+[DEBUG] Skipped remote update check for org.springframework.social:spring-social-core:1.1.0.BUILD-SNAPSHOT/maven-metadata.xml, locally cached metadata up-to-date.
+[DEBUG] Failure to find org.springframework.social:spring-social-core:1.1.0.BUILD-SNAPSHOT/maven-metadata.xml in http://repository.jboss.org/nexus/content/groups/public-jboss was cached in the local repository, resolution will not be reattempted until the update interval of repository.jboss.com has elapsed or updates are forced
+[DEBUG] Failure to find org.springframework.social:spring-social-core:1.1.0.BUILD-SNAPSHOT/maven-metadata.xml in http://mvnrepository.googlecode.com/svn/repo was cached in the local repository, resolution will not be reattempted until the update interval of googlecode.com has elapsed or updates are forced
+[DEBUG] Could not find metadata org.springframework.social:spring-social-facebook:1.1.0.BUILD-SNAPSHOT/maven-metadata.xml in local (/home/jtsay/.m2/repository)
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://mvnrepository.googlecode.com/svn/repo
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://repository.jboss.org/nexus/content/groups/public-jboss
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://repo.springsource.org/snapshot
+Downloading: http://mvnrepository.googlecode.com/svn/repo/org/springframework/social/spring-social-facebook/1.1.0.BUILD-SNAPSHOT/maven-metadata.xml
+Downloading: http://repo.springsource.org/snapshot/org/springframework/social/spring-social-facebook/1.1.0.BUILD-SNAPSHOT/maven-metadata.xml
+Downloading: http://repository.jboss.org/nexus/content/groups/public-jboss/org/springframework/social/spring-social-facebook/1.1.0.BUILD-SNAPSHOT/maven-metadata.xml
+
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/org/springframework/social/spring-social-facebook/1.1.0.BUILD-SNAPSHOT/resolver-status.properties
+1/4 KB   
+4/4 KB   
+         
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/org/springframework/social/spring-social-facebook/1.1.0.BUILD-SNAPSHOT/resolver-status.properties
+         
+Downloaded: http://repo.springsource.org/snapshot/org/springframework/social/spring-social-facebook/1.1.0.BUILD-SNAPSHOT/maven-metadata.xml (4 KB at 5.5 KB/sec)
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/org/springframework/social/spring-social-facebook/1.1.0.BUILD-SNAPSHOT/resolver-status.properties
+[DEBUG] Could not find metadata org.springframework.social:spring-social-facebook:1.1.0.BUILD-SNAPSHOT/maven-metadata.xml in repository.jboss.com (http://repository.jboss.org/nexus/content/groups/public-jboss)
+[DEBUG] Could not find metadata org.springframework.social:spring-social-facebook:1.1.0.BUILD-SNAPSHOT/maven-metadata.xml in googlecode.com (http://mvnrepository.googlecode.com/svn/repo)
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://repo.springsource.org/snapshot
+Downloading: http://repo.springsource.org/snapshot/org/springframework/social/spring-social-facebook/1.1.0.BUILD-SNAPSHOT/spring-social-facebook-1.1.0.BUILD-20130703.082057-421.pom
+1/3 KB   
+3/3 KB   
+         
+Downloaded: http://repo.springsource.org/snapshot/org/springframework/social/spring-social-facebook/1.1.0.BUILD-SNAPSHOT/spring-social-facebook-1.1.0.BUILD-20130703.082057-421.pom (3 KB at 11.4 KB/sec)
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/org/springframework/social/spring-social-facebook/1.1.0.BUILD-SNAPSHOT/spring-social-facebook-1.1.0.BUILD-20130703.082057-421.pom.lastUpdated
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/org/springframework/social/spring-social-facebook/1.1.0.BUILD-SNAPSHOT/_maven.repositories
+[DEBUG] Could not find metadata org.springframework.social:spring-social-config:1.1.0.BUILD-SNAPSHOT/maven-metadata.xml in local (/home/jtsay/.m2/repository)
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://mvnrepository.googlecode.com/svn/repo
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://repository.jboss.org/nexus/content/groups/public-jboss
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://repo.springsource.org/snapshot
+Downloading: http://mvnrepository.googlecode.com/svn/repo/org/springframework/social/spring-social-config/1.1.0.BUILD-SNAPSHOT/maven-metadata.xml
+Downloading: http://repository.jboss.org/nexus/content/groups/public-jboss/org/springframework/social/spring-social-config/1.1.0.BUILD-SNAPSHOT/maven-metadata.xml
+Downloading: http://repo.springsource.org/snapshot/org/springframework/social/spring-social-config/1.1.0.BUILD-SNAPSHOT/maven-metadata.xml
+         
+1/3 KB   
+3/3 KB   
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/org/springframework/social/spring-social-config/1.1.0.BUILD-SNAPSHOT/resolver-status.properties
+         
+Downloaded: http://repo.springsource.org/snapshot/org/springframework/social/spring-social-config/1.1.0.BUILD-SNAPSHOT/maven-metadata.xml (3 KB at 7.5 KB/sec)
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/org/springframework/social/spring-social-config/1.1.0.BUILD-SNAPSHOT/resolver-status.properties
+         
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/org/springframework/social/spring-social-config/1.1.0.BUILD-SNAPSHOT/resolver-status.properties
+[DEBUG] Could not find metadata org.springframework.social:spring-social-config:1.1.0.BUILD-SNAPSHOT/maven-metadata.xml in repository.jboss.com (http://repository.jboss.org/nexus/content/groups/public-jboss)
+[DEBUG] Could not find metadata org.springframework.social:spring-social-config:1.1.0.BUILD-SNAPSHOT/maven-metadata.xml in googlecode.com (http://mvnrepository.googlecode.com/svn/repo)
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://repo.springsource.org/snapshot
+Downloading: http://repo.springsource.org/snapshot/org/springframework/social/spring-social-config/1.1.0.BUILD-SNAPSHOT/spring-social-config-1.1.0.BUILD-20130703.082017-332.pom
+1/3 KB   
+3/3 KB   
+         
+Downloaded: http://repo.springsource.org/snapshot/org/springframework/social/spring-social-config/1.1.0.BUILD-SNAPSHOT/spring-social-config-1.1.0.BUILD-20130703.082017-332.pom (3 KB at 10.1 KB/sec)
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/org/springframework/social/spring-social-config/1.1.0.BUILD-SNAPSHOT/spring-social-config-1.1.0.BUILD-20130703.082017-332.pom.lastUpdated
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/org/springframework/social/spring-social-config/1.1.0.BUILD-SNAPSHOT/_maven.repositories
+[DEBUG] Could not find metadata org.springframework.social:spring-social-web:1.1.0.BUILD-SNAPSHOT/maven-metadata.xml in local (/home/jtsay/.m2/repository)
+[DEBUG] [DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://repository.jboss.org/nexus/content/groups/public-jboss
+Using connector WagonRepositoryConnector with priority 0 for http://repo.springsource.org/snapshot
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://mvnrepository.googlecode.com/svn/repo
+Downloading: http://repository.jboss.org/nexus/content/groups/public-jboss/org/springframework/social/spring-social-web/1.1.0.BUILD-SNAPSHOT/maven-metadata.xml
+Downloading: http://mvnrepository.googlecode.com/svn/repo/org/springframework/social/spring-social-web/1.1.0.BUILD-SNAPSHOT/maven-metadata.xml
+Downloading: http://repo.springsource.org/snapshot/org/springframework/social/spring-social-web/1.1.0.BUILD-SNAPSHOT/maven-metadata.xml
+1/3 KB   
+3/3 KB   
+         
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/org/springframework/social/spring-social-web/1.1.0.BUILD-SNAPSHOT/resolver-status.properties
+         
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/org/springframework/social/spring-social-web/1.1.0.BUILD-SNAPSHOT/resolver-status.properties
+         
+Downloaded: http://repo.springsource.org/snapshot/org/springframework/social/spring-social-web/1.1.0.BUILD-SNAPSHOT/maven-metadata.xml (3 KB at 9.1 KB/sec)
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/org/springframework/social/spring-social-web/1.1.0.BUILD-SNAPSHOT/resolver-status.properties
+[DEBUG] Could not find metadata org.springframework.social:spring-social-web:1.1.0.BUILD-SNAPSHOT/maven-metadata.xml in repository.jboss.com (http://repository.jboss.org/nexus/content/groups/public-jboss)
+[DEBUG] Could not find metadata org.springframework.social:spring-social-web:1.1.0.BUILD-SNAPSHOT/maven-metadata.xml in googlecode.com (http://mvnrepository.googlecode.com/svn/repo)
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://repo.springsource.org/snapshot
+Downloading: http://repo.springsource.org/snapshot/org/springframework/social/spring-social-web/1.1.0.BUILD-SNAPSHOT/spring-social-web-1.1.0.BUILD-20130703.082017-449.pom
+1/3 KB   
+3/3 KB   
+         
+Downloaded: http://repo.springsource.org/snapshot/org/springframework/social/spring-social-web/1.1.0.BUILD-SNAPSHOT/spring-social-web-1.1.0.BUILD-20130703.082017-449.pom (3 KB at 11.1 KB/sec)
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/org/springframework/social/spring-social-web/1.1.0.BUILD-SNAPSHOT/spring-social-web-1.1.0.BUILD-20130703.082017-449.pom.lastUpdated
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/org/springframework/social/spring-social-web/1.1.0.BUILD-SNAPSHOT/_maven.repositories
+[DEBUG] Could not find metadata org.springframework.social:spring-social-facebook-web:1.1.0.BUILD-SNAPSHOT/maven-metadata.xml in local (/home/jtsay/.m2/repository)
+[DEBUG] [DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://repository.jboss.org/nexus/content/groups/public-jboss
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://mvnrepository.googlecode.com/svn/repo
+Using connector WagonRepositoryConnector with priority 0 for http://repo.springsource.org/snapshot
+Downloading: http://repository.jboss.org/nexus/content/groups/public-jboss/org/springframework/social/spring-social-facebook-web/1.1.0.BUILD-SNAPSHOT/maven-metadata.xml
+Downloading: http://mvnrepository.googlecode.com/svn/repo/org/springframework/social/spring-social-facebook-web/1.1.0.BUILD-SNAPSHOT/maven-metadata.xml
+Downloading: http://repo.springsource.org/snapshot/org/springframework/social/spring-social-facebook-web/1.1.0.BUILD-SNAPSHOT/maven-metadata.xml
+         
+1/3 KB   
+3/3 KB   
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/org/springframework/social/spring-social-facebook-web/1.1.0.BUILD-SNAPSHOT/resolver-status.properties
+         
+Downloaded: http://repo.springsource.org/snapshot/org/springframework/social/spring-social-facebook-web/1.1.0.BUILD-SNAPSHOT/maven-metadata.xml (3 KB at 10.0 KB/sec)
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/org/springframework/social/spring-social-facebook-web/1.1.0.BUILD-SNAPSHOT/resolver-status.properties
+         
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/org/springframework/social/spring-social-facebook-web/1.1.0.BUILD-SNAPSHOT/resolver-status.properties
+[DEBUG] Could not find metadata org.springframework.social:spring-social-facebook-web:1.1.0.BUILD-SNAPSHOT/maven-metadata.xml in repository.jboss.com (http://repository.jboss.org/nexus/content/groups/public-jboss)
+[DEBUG] Could not find metadata org.springframework.social:spring-social-facebook-web:1.1.0.BUILD-SNAPSHOT/maven-metadata.xml in googlecode.com (http://mvnrepository.googlecode.com/svn/repo)
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://repo.springsource.org/snapshot
+Downloading: http://repo.springsource.org/snapshot/org/springframework/social/spring-social-facebook-web/1.1.0.BUILD-SNAPSHOT/spring-social-facebook-web-1.1.0.BUILD-20130703.082057-420.pom
+1/4 KB   
+3/4 KB   
+4/4 KB   
+         
+Downloaded: http://repo.springsource.org/snapshot/org/springframework/social/spring-social-facebook-web/1.1.0.BUILD-SNAPSHOT/spring-social-facebook-web-1.1.0.BUILD-20130703.082057-420.pom (4 KB at 13.8 KB/sec)
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/org/springframework/social/spring-social-facebook-web/1.1.0.BUILD-SNAPSHOT/spring-social-facebook-web-1.1.0.BUILD-20130703.082057-420.pom.lastUpdated
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/org/springframework/social/spring-social-facebook-web/1.1.0.BUILD-SNAPSHOT/_maven.repositories
+[DEBUG] Could not find metadata org.springframework.social:spring-social-twitter:1.1.0.BUILD-SNAPSHOT/maven-metadata.xml in local (/home/jtsay/.m2/repository)
+[DEBUG] [DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://repository.jboss.org/nexus/content/groups/public-jboss
+Using connector WagonRepositoryConnector with priority 0 for http://repo.springsource.org/snapshot
+Downloading: http://repository.jboss.org/nexus/content/groups/public-jboss/org/springframework/social/spring-social-twitter/1.1.0.BUILD-SNAPSHOT/maven-metadata.xml
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://mvnrepository.googlecode.com/svn/repo
+Downloading: http://repo.springsource.org/snapshot/org/springframework/social/spring-social-twitter/1.1.0.BUILD-SNAPSHOT/maven-metadata.xml
+Downloading: http://mvnrepository.googlecode.com/svn/repo/org/springframework/social/spring-social-twitter/1.1.0.BUILD-SNAPSHOT/maven-metadata.xml
+1/4 KB   
+3/4 KB   
+4/4 KB   
+         
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/org/springframework/social/spring-social-twitter/1.1.0.BUILD-SNAPSHOT/resolver-status.properties
+         
+Downloaded: http://repo.springsource.org/snapshot/org/springframework/social/spring-social-twitter/1.1.0.BUILD-SNAPSHOT/maven-metadata.xml (4 KB at 15.6 KB/sec)
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/org/springframework/social/spring-social-twitter/1.1.0.BUILD-SNAPSHOT/resolver-status.properties
+         
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/org/springframework/social/spring-social-twitter/1.1.0.BUILD-SNAPSHOT/resolver-status.properties
+[DEBUG] Could not find metadata org.springframework.social:spring-social-twitter:1.1.0.BUILD-SNAPSHOT/maven-metadata.xml in repository.jboss.com (http://repository.jboss.org/nexus/content/groups/public-jboss)
+[DEBUG] Could not find metadata org.springframework.social:spring-social-twitter:1.1.0.BUILD-SNAPSHOT/maven-metadata.xml in googlecode.com (http://mvnrepository.googlecode.com/svn/repo)
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://repo.springsource.org/snapshot
+Downloading: http://repo.springsource.org/snapshot/org/springframework/social/spring-social-twitter/1.1.0.BUILD-SNAPSHOT/spring-social-twitter-1.1.0.BUILD-20130703.082405-427.pom
+1/3 KB   
+3/3 KB   
+3/3 KB   
+         
+Downloaded: http://repo.springsource.org/snapshot/org/springframework/social/spring-social-twitter/1.1.0.BUILD-SNAPSHOT/spring-social-twitter-1.1.0.BUILD-20130703.082405-427.pom (3 KB at 13.0 KB/sec)
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/org/springframework/social/spring-social-twitter/1.1.0.BUILD-SNAPSHOT/spring-social-twitter-1.1.0.BUILD-20130703.082405-427.pom.lastUpdated
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/org/springframework/social/spring-social-twitter/1.1.0.BUILD-SNAPSHOT/_maven.repositories
+[DEBUG] Could not find metadata org.springframework.social:spring-social-linkedin:1.0.0.BUILD-SNAPSHOT/maven-metadata.xml in local (/home/jtsay/.m2/repository)
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://repo.springsource.org/snapshot
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://repository.jboss.org/nexus/content/groups/public-jboss
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://mvnrepository.googlecode.com/svn/repo
+Downloading: http://repo.springsource.org/snapshot/org/springframework/social/spring-social-linkedin/1.0.0.BUILD-SNAPSHOT/maven-metadata.xml
+Downloading: http://repository.jboss.org/nexus/content/groups/public-jboss/org/springframework/social/spring-social-linkedin/1.0.0.BUILD-SNAPSHOT/maven-metadata.xml
+Downloading: http://mvnrepository.googlecode.com/svn/repo/org/springframework/social/spring-social-linkedin/1.0.0.BUILD-SNAPSHOT/maven-metadata.xml
+1/4 KB   
+4/4 KB   
+         
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/org/springframework/social/spring-social-linkedin/1.0.0.BUILD-SNAPSHOT/resolver-status.properties
+         
+Downloaded: http://repo.springsource.org/snapshot/org/springframework/social/spring-social-linkedin/1.0.0.BUILD-SNAPSHOT/maven-metadata.xml (4 KB at 14.9 KB/sec)
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/org/springframework/social/spring-social-linkedin/1.0.0.BUILD-SNAPSHOT/resolver-status.properties
+         
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/org/springframework/social/spring-social-linkedin/1.0.0.BUILD-SNAPSHOT/resolver-status.properties
+[DEBUG] Could not find metadata org.springframework.social:spring-social-linkedin:1.0.0.BUILD-SNAPSHOT/maven-metadata.xml in repository.jboss.com (http://repository.jboss.org/nexus/content/groups/public-jboss)
+[DEBUG] Could not find metadata org.springframework.social:spring-social-linkedin:1.0.0.BUILD-SNAPSHOT/maven-metadata.xml in googlecode.com (http://mvnrepository.googlecode.com/svn/repo)
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://repo.springsource.org/snapshot
+Downloading: http://repo.springsource.org/snapshot/org/springframework/social/spring-social-linkedin/1.0.0.BUILD-SNAPSHOT/spring-social-linkedin-1.0.0.BUILD-20130703.081525-394.pom
+3/3 KB   
+         
+Downloaded: http://repo.springsource.org/snapshot/org/springframework/social/spring-social-linkedin/1.0.0.BUILD-SNAPSHOT/spring-social-linkedin-1.0.0.BUILD-20130703.081525-394.pom (3 KB at 11.7 KB/sec)
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/org/springframework/social/spring-social-linkedin/1.0.0.BUILD-SNAPSHOT/spring-social-linkedin-1.0.0.BUILD-20130703.081525-394.pom.lastUpdated
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/org/springframework/social/spring-social-linkedin/1.0.0.BUILD-SNAPSHOT/_maven.repositories
+[DEBUG] Could not find metadata org.springframework.social:spring-social-security:1.1.0.BUILD-SNAPSHOT/maven-metadata.xml in local (/home/jtsay/.m2/repository)
+[DEBUG] [DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://repo.springsource.org/snapshot
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://mvnrepository.googlecode.com/svn/repo
+Using connector WagonRepositoryConnector with priority 0 for http://repository.jboss.org/nexus/content/groups/public-jboss
+Downloading: http://repo.springsource.org/snapshot/org/springframework/social/spring-social-security/1.1.0.BUILD-SNAPSHOT/maven-metadata.xml
+Downloading: http://mvnrepository.googlecode.com/svn/repo/org/springframework/social/spring-social-security/1.1.0.BUILD-SNAPSHOT/maven-metadata.xml
+Downloading: http://repository.jboss.org/nexus/content/groups/public-jboss/org/springframework/social/spring-social-security/1.1.0.BUILD-SNAPSHOT/maven-metadata.xml
+1/3 KB   
+3/3 KB   
+         
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/org/springframework/social/spring-social-security/1.1.0.BUILD-SNAPSHOT/resolver-status.properties
+         
+Downloaded: http://repo.springsource.org/snapshot/org/springframework/social/spring-social-security/1.1.0.BUILD-SNAPSHOT/maven-metadata.xml (3 KB at 9.1 KB/sec)
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/org/springframework/social/spring-social-security/1.1.0.BUILD-SNAPSHOT/resolver-status.properties
+         
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/org/springframework/social/spring-social-security/1.1.0.BUILD-SNAPSHOT/resolver-status.properties
+[DEBUG] Could not find metadata org.springframework.social:spring-social-security:1.1.0.BUILD-SNAPSHOT/maven-metadata.xml in repository.jboss.com (http://repository.jboss.org/nexus/content/groups/public-jboss)
+[DEBUG] Could not find metadata org.springframework.social:spring-social-security:1.1.0.BUILD-SNAPSHOT/maven-metadata.xml in googlecode.com (http://mvnrepository.googlecode.com/svn/repo)
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://repo.springsource.org/snapshot
+Downloading: http://repo.springsource.org/snapshot/org/springframework/social/spring-social-security/1.1.0.BUILD-SNAPSHOT/spring-social-security-1.1.0.BUILD-20130703.082017-239.pom
+3/3 KB   
+         
+Downloaded: http://repo.springsource.org/snapshot/org/springframework/social/spring-social-security/1.1.0.BUILD-SNAPSHOT/spring-social-security-1.1.0.BUILD-20130703.082017-239.pom (3 KB at 11.7 KB/sec)
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/org/springframework/social/spring-social-security/1.1.0.BUILD-SNAPSHOT/spring-social-security-1.1.0.BUILD-20130703.082017-239.pom.lastUpdated
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/org/springframework/social/spring-social-security/1.1.0.BUILD-SNAPSHOT/_maven.repositories
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://repository.jboss.org/nexus/content/groups/public-jboss
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://mvnrepository.googlecode.com/svn/repo
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://repo.springsource.org/snapshot
+Downloading: http://repository.jboss.org/nexus/content/groups/public-jboss/com/ngweb/gutx/s3/0.0.2-SNAPSHOT/maven-metadata.xml
+Downloading: http://mvnrepository.googlecode.com/svn/repo/com/ngweb/gutx/s3/0.0.2-SNAPSHOT/maven-metadata.xml
+Downloading: http://repo.springsource.org/snapshot/com/ngweb/gutx/s3/0.0.2-SNAPSHOT/maven-metadata.xml
+         
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/com/ngweb/gutx/s3/0.0.2-SNAPSHOT/resolver-status.properties
+         
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/com/ngweb/gutx/s3/0.0.2-SNAPSHOT/resolver-status.properties
+         
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/com/ngweb/gutx/s3/0.0.2-SNAPSHOT/resolver-status.properties
+[DEBUG] Could not find metadata com.ngweb.gutx:s3:0.0.2-SNAPSHOT/maven-metadata.xml in org.springframework.maven.snapshot (http://repo.springsource.org/snapshot)
+[DEBUG] Could not find metadata com.ngweb.gutx:s3:0.0.2-SNAPSHOT/maven-metadata.xml in repository.jboss.com (http://repository.jboss.org/nexus/content/groups/public-jboss)
+[DEBUG] Could not find metadata com.ngweb.gutx:s3:0.0.2-SNAPSHOT/maven-metadata.xml in googlecode.com (http://mvnrepository.googlecode.com/svn/repo)
+[DEBUG] Skipped remote update check for com.ngweb.gutx:s3:0.0.2-SNAPSHOT/maven-metadata.xml, already updated during this session.
+[DEBUG] Failure to find com.ngweb.gutx:s3:0.0.2-SNAPSHOT/maven-metadata.xml in http://repo.springsource.org/snapshot was cached in the local repository, resolution will not be reattempted until the update interval of org.springframework.maven.snapshot has elapsed or updates are forced
+[DEBUG] Skipped remote update check for com.ngweb.gutx:s3:0.0.2-SNAPSHOT/maven-metadata.xml, already updated during this session.
+[DEBUG] Failure to find com.ngweb.gutx:s3:0.0.2-SNAPSHOT/maven-metadata.xml in http://repository.jboss.org/nexus/content/groups/public-jboss was cached in the local repository, resolution will not be reattempted until the update interval of repository.jboss.com has elapsed or updates are forced
+[DEBUG] Skipped remote update check for com.ngweb.gutx:s3:0.0.2-SNAPSHOT/maven-metadata.xml, already updated during this session.
+[DEBUG] Failure to find com.ngweb.gutx:s3:0.0.2-SNAPSHOT/maven-metadata.xml in http://mvnrepository.googlecode.com/svn/repo was cached in the local repository, resolution will not be reattempted until the update interval of googlecode.com has elapsed or updates are forced
+[DEBUG] Failure to find com.ngweb:scala-parent:0.0.3-SNAPSHOT/maven-metadata.xml in http://repo.springsource.org/snapshot was cached in the local repository, resolution will not be reattempted until the update interval of org.springframework.maven.snapshot has elapsed or updates are forced
+[DEBUG] Failure to find com.ngweb:scala-parent:0.0.3-SNAPSHOT/maven-metadata.xml in http://repository.jboss.org/nexus/content/groups/public-jboss was cached in the local repository, resolution will not be reattempted until the update interval of repository.jboss.com has elapsed or updates are forced
+[DEBUG] Failure to find com.ngweb:scala-parent:0.0.3-SNAPSHOT/maven-metadata.xml in http://mvnrepository.googlecode.com/svn/repo was cached in the local repository, resolution will not be reattempted until the update interval of googlecode.com has elapsed or updates are forced
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://repository.jboss.org/nexus/content/groups/public-jboss
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://mvnrepository.googlecode.com/svn/repo
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://repo.springsource.org/snapshot
+Downloading: http://repository.jboss.org/nexus/content/groups/public-jboss/com/ngweb/sideref/sideref-legacy-java/1.0.1-SNAPSHOT/maven-metadata.xml
+Downloading: http://mvnrepository.googlecode.com/svn/repo/com/ngweb/sideref/sideref-legacy-java/1.0.1-SNAPSHOT/maven-metadata.xml
+Downloading: http://repo.springsource.org/snapshot/com/ngweb/sideref/sideref-legacy-java/1.0.1-SNAPSHOT/maven-metadata.xml
+         
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/com/ngweb/sideref/sideref-legacy-java/1.0.1-SNAPSHOT/resolver-status.properties
+         
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/com/ngweb/sideref/sideref-legacy-java/1.0.1-SNAPSHOT/resolver-status.properties
+         
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/com/ngweb/sideref/sideref-legacy-java/1.0.1-SNAPSHOT/resolver-status.properties
+[DEBUG] Could not find metadata com.ngweb.sideref:sideref-legacy-java:1.0.1-SNAPSHOT/maven-metadata.xml in org.springframework.maven.snapshot (http://repo.springsource.org/snapshot)
+[DEBUG] Could not find metadata com.ngweb.sideref:sideref-legacy-java:1.0.1-SNAPSHOT/maven-metadata.xml in repository.jboss.com (http://repository.jboss.org/nexus/content/groups/public-jboss)
+[DEBUG] Could not find metadata com.ngweb.sideref:sideref-legacy-java:1.0.1-SNAPSHOT/maven-metadata.xml in googlecode.com (http://mvnrepository.googlecode.com/svn/repo)
+[DEBUG] Skipped remote update check for com.ngweb.sideref:sideref-legacy-java:1.0.1-SNAPSHOT/maven-metadata.xml, already updated during this session.
+[DEBUG] Failure to find com.ngweb.sideref:sideref-legacy-java:1.0.1-SNAPSHOT/maven-metadata.xml in http://repo.springsource.org/snapshot was cached in the local repository, resolution will not be reattempted until the update interval of org.springframework.maven.snapshot has elapsed or updates are forced
+[DEBUG] Skipped remote update check for com.ngweb.sideref:sideref-legacy-java:1.0.1-SNAPSHOT/maven-metadata.xml, already updated during this session.
+[DEBUG] Failure to find com.ngweb.sideref:sideref-legacy-java:1.0.1-SNAPSHOT/maven-metadata.xml in http://repository.jboss.org/nexus/content/groups/public-jboss was cached in the local repository, resolution will not be reattempted until the update interval of repository.jboss.com has elapsed or updates are forced
+[DEBUG] Skipped remote update check for com.ngweb.sideref:sideref-legacy-java:1.0.1-SNAPSHOT/maven-metadata.xml, already updated during this session.
+[DEBUG] Failure to find com.ngweb.sideref:sideref-legacy-java:1.0.1-SNAPSHOT/maven-metadata.xml in http://mvnrepository.googlecode.com/svn/repo was cached in the local repository, resolution will not be reattempted until the update interval of googlecode.com has elapsed or updates are forced
+[DEBUG] [DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://repository.jboss.org/nexus/content/groups/public-jboss
+Using connector WagonRepositoryConnector with priority 0 for http://mvnrepository.googlecode.com/svn/repo
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://repo.springsource.org/snapshot
+Downloading: http://repository.jboss.org/nexus/content/groups/public-jboss/com/ngweb/spring-mvc-grails-goodies/0.2.0-SNAPSHOT/maven-metadata.xml
+Downloading: http://mvnrepository.googlecode.com/svn/repo/com/ngweb/spring-mvc-grails-goodies/0.2.0-SNAPSHOT/maven-metadata.xml
+Downloading: http://repo.springsource.org/snapshot/com/ngweb/spring-mvc-grails-goodies/0.2.0-SNAPSHOT/maven-metadata.xml
+         
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/com/ngweb/spring-mvc-grails-goodies/0.2.0-SNAPSHOT/resolver-status.properties
+         
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/com/ngweb/spring-mvc-grails-goodies/0.2.0-SNAPSHOT/resolver-status.properties
+         
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/com/ngweb/spring-mvc-grails-goodies/0.2.0-SNAPSHOT/resolver-status.properties
+[DEBUG] Could not find metadata com.ngweb:spring-mvc-grails-goodies:0.2.0-SNAPSHOT/maven-metadata.xml in org.springframework.maven.snapshot (http://repo.springsource.org/snapshot)
+[DEBUG] Could not find metadata com.ngweb:spring-mvc-grails-goodies:0.2.0-SNAPSHOT/maven-metadata.xml in repository.jboss.com (http://repository.jboss.org/nexus/content/groups/public-jboss)
+[DEBUG] Could not find metadata com.ngweb:spring-mvc-grails-goodies:0.2.0-SNAPSHOT/maven-metadata.xml in googlecode.com (http://mvnrepository.googlecode.com/svn/repo)
+[DEBUG] Skipped remote update check for com.ngweb:spring-mvc-grails-goodies:0.2.0-SNAPSHOT/maven-metadata.xml, already updated during this session.
+[DEBUG] Failure to find com.ngweb:spring-mvc-grails-goodies:0.2.0-SNAPSHOT/maven-metadata.xml in http://repo.springsource.org/snapshot was cached in the local repository, resolution will not be reattempted until the update interval of org.springframework.maven.snapshot has elapsed or updates are forced
+[DEBUG] Skipped remote update check for com.ngweb:spring-mvc-grails-goodies:0.2.0-SNAPSHOT/maven-metadata.xml, already updated during this session.
+[DEBUG] Failure to find com.ngweb:spring-mvc-grails-goodies:0.2.0-SNAPSHOT/maven-metadata.xml in http://repository.jboss.org/nexus/content/groups/public-jboss was cached in the local repository, resolution will not be reattempted until the update interval of repository.jboss.com has elapsed or updates are forced
+[DEBUG] Skipped remote update check for com.ngweb:spring-mvc-grails-goodies:0.2.0-SNAPSHOT/maven-metadata.xml, already updated during this session.
+[DEBUG] Failure to find com.ngweb:spring-mvc-grails-goodies:0.2.0-SNAPSHOT/maven-metadata.xml in http://mvnrepository.googlecode.com/svn/repo was cached in the local repository, resolution will not be reattempted until the update interval of googlecode.com has elapsed or updates are forced
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://repo.springsource.org/snapshot
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://repository.jboss.org/nexus/content/groups/public-jboss
+[DEBUG] Using connector WagonRepositoryConnector with priority 0 for http://mvnrepository.googlecode.com/svn/repo
+Downloading: http://repo.springsource.org/snapshot/com/ngweb/ngweb-test-helpers/1.0.1-SNAPSHOT/maven-metadata.xml
+Downloading: http://repository.jboss.org/nexus/content/groups/public-jboss/com/ngweb/ngweb-test-helpers/1.0.1-SNAPSHOT/maven-metadata.xml
+Downloading: http://mvnrepository.googlecode.com/svn/repo/com/ngweb/ngweb-test-helpers/1.0.1-SNAPSHOT/maven-metadata.xml
+         
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/com/ngweb/ngweb-test-helpers/1.0.1-SNAPSHOT/resolver-status.properties
+         
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/com/ngweb/ngweb-test-helpers/1.0.1-SNAPSHOT/resolver-status.properties
+         
+[DEBUG] Writing resolution tracking file /home/jtsay/.m2/repository/com/ngweb/ngweb-test-helpers/1.0.1-SNAPSHOT/resolver-status.properties
+[DEBUG] Could not find metadata com.ngweb:ngweb-test-helpers:1.0.1-SNAPSHOT/maven-metadata.xml in org.springframework.maven.snapshot (http://repo.springsource.org/snapshot)
+[DEBUG] Could not find metadata com.ngweb:ngweb-test-helpers:1.0.1-SNAPSHOT/maven-metadata.xml in repository.jboss.com (http://repository.jboss.org/nexus/content/groups/public-jboss)
+[DEBUG] Could not find metadata com.ngweb:ngweb-test-helpers:1.0.1-SNAPSHOT/maven-metadata.xml in googlecode.com (http://mvnrepository.googlecode.com/svn/repo)
+[DEBUG] Skipped remote update check for com.ngweb:ngweb-test-helpers:1.0.1-SNAPSHOT/maven-metadata.xml, already updated during this session.
+[DEBUG] Failure to find com.ngweb:ngweb-test-helpers:1.0.1-SNAPSHOT/maven-metadata.xml in http://repo.springsource.org/snapshot was cached in the local repository, resolution will not be reattempted until the update interval of org.springframework.maven.snapshot has elapsed or updates are forced
+[DEBUG] Skipped remote update check for com.ngweb:ngweb-test-helpers:1.0.1-SNAPSHOT/maven-metadata.xml, already updated during this session.
+[DEBUG] Failure to find com.ngweb:ngweb-test-helpers:1.0.1-SNAPSHOT/maven-metadata.xml in http://repository.jboss.org/nexus/content/groups/public-jboss was cached in the local repository, resolution will not be reattempted until the update interval of repository.jboss.com has elapsed or updates are forced
+[DEBUG] Skipped remote update check for com.ngweb:ngweb-test-helpers:1.0.1-SNAPSHOT/maven-metadata.xml, already updated during this session.
+[DEBUG] Failure to find com.ngweb:ngweb-test-helpers:1.0.1-SNAPSHOT/maven-metadata.xml in http://mvnrepository.googlecode.com/svn/repo was cached in the local repository, resolution will not be reattempted until the update interval of googlecode.com has elapsed or updates are forced
+[DEBUG] com.ngweb.sideref:pwnsearch:jar:1.0-SNAPSHOT
+[DEBUG]    org.aspectj:aspectjrt:jar:1.7.2:compile
+[DEBUG]    org.aspectj:aspectjweaver:jar:1.7.2:compile
+[DEBUG]    javax.inject:javax.inject:jar:1:compile
+[DEBUG]    commons-lang:commons-lang:jar:2.6:compile
+[DEBUG]    org.apache.commons:commons-lang3:jar:3.1:compile
+[DEBUG]    commons-codec:commons-codec:jar:1.7:compile
+[DEBUG]    commons-collections:commons-collections:jar:3.2.1:compile
+[DEBUG]    commons-beanutils:commons-beanutils:jar:1.8.3:compile
+[DEBUG]       commons-logging:commons-logging:jar:1.1.1:compile
+[DEBUG]    commons-validator:commons-validator:jar:1.3.1:compile
+[DEBUG]       commons-digester:commons-digester:jar:1.6:compile
+[DEBUG]          xml-apis:xml-apis:jar:1.0.b2:compile
+[DEBUG]    commons-io:commons-io:jar:2.4:compile
+[DEBUG]    commons-pool:commons-pool:jar:1.6:compile
+[DEBUG]    com.google.guava:guava:jar:14.0:compile
+[DEBUG]    com.google.code.findbugs:jsr305:jar:1.3.9:compile
+[DEBUG]    com.ngweb:ngweb-commons:jar:1.0-SNAPSHOT:compile
+[DEBUG]    org.apache.httpcomponents:httpclient:jar:4.2.5:compile
+[DEBUG]       org.apache.httpcomponents:httpcore:jar:4.2.4:compile
+[DEBUG]    org.codehaus.jackson:jackson-mapper-asl:jar:1.9.12:compile
+[DEBUG]       org.codehaus.jackson:jackson-core-asl:jar:1.9.12:compile
+[DEBUG]    com.fasterxml.jackson.core:jackson-core:jar:2.2.1:compile
+[DEBUG]    com.fasterxml.jackson.core:jackson-databind:jar:2.2.1:compile
+[DEBUG]       com.fasterxml.jackson.core:jackson-annotations:jar:2.2.1:compile
+[DEBUG]    com.fasterxml.jackson.module:jackson-module-scala_2.9.3:jar:2.2.0:compile
+[DEBUG]       com.thoughtworks.paranamer:paranamer:jar:2.3:compile
+[DEBUG]    com.jolbox:bonecp:jar:0.7.1.RELEASE:compile
+[DEBUG]    net.sf.ezmorph:ezmorph:jar:1.0.6:compile
+[DEBUG]    net.sf.json-lib:json-lib:jar:jdk15:2.4:compile
+[DEBUG]    javax.servlet:javax.servlet-api:jar:3.0.1:provided
+[DEBUG]    javax.mail:mail:jar:1.4.1:compile
+[DEBUG]       javax.activation:activation:jar:1.1:compile
+[DEBUG]    javax.servlet.jsp:javax.servlet.jsp-api:jar:2.3.1:compile
+[DEBUG]    taglibs:standard:jar:1.1.2:compile
+[DEBUG]    javax.servlet:jstl:jar:1.2:compile
+[DEBUG]    commons-httpclient:commons-httpclient:jar:3.1:compile
+[DEBUG]    org.springframework:spring-context:jar:3.2.3.RELEASE:compile
+[DEBUG]       org.springframework:spring-beans:jar:3.2.3.RELEASE:compile
+[DEBUG]       org.springframework:spring-core:jar:3.2.3.RELEASE:compile
+[DEBUG]       org.springframework:spring-expression:jar:3.2.3.RELEASE:compile
+[DEBUG]    org.springframework:spring-context-support:jar:3.2.3.RELEASE:compile
+[DEBUG]    org.springframework:spring-aop:jar:3.2.3.RELEASE:compile
+[DEBUG]       aopalliance:aopalliance:jar:1.0:compile
+[DEBUG]    org.springframework:spring-aspects:jar:3.2.3.RELEASE:compile
+[DEBUG]    org.springframework:spring-jdbc:jar:3.2.3.RELEASE:compile
+[DEBUG]    org.springframework:spring-orm:jar:3.2.3.RELEASE:compile
+[DEBUG]    org.springframework:spring-tx:jar:3.2.3.RELEASE:compile
+[DEBUG]    org.springframework:spring-webmvc:jar:3.2.3.RELEASE:compile
+[DEBUG]       org.springframework:spring-web:jar:3.2.3.RELEASE:compile
+[DEBUG]    org.springframework.security:spring-security-core:jar:3.1.4.RELEASE:compile
+[DEBUG]    org.springframework.security:spring-security-openid:jar:3.1.4.RELEASE:compile
+[DEBUG]       com.google.inject:guice:jar:2.0:compile
+[DEBUG]       org.openid4java:openid4java-nodeps:jar:0.9.6:compile
+[DEBUG]          net.jcip:jcip-annotations:jar:1.0:compile
+[DEBUG]    org.springframework.security:spring-security-web:jar:3.1.4.RELEASE:compile
+[DEBUG]    org.springframework.security:spring-security-taglibs:jar:3.1.4.RELEASE:compile
+[DEBUG]       org.springframework.security:spring-security-acl:jar:3.1.4.RELEASE:compile
+[DEBUG]    org.springframework.security:spring-security-config:jar:3.1.4.RELEASE:compile
+[DEBUG]    org.springframework.social:spring-social-core:jar:1.1.0.BUILD-SNAPSHOT:compile
+[DEBUG]    org.springframework.social:spring-social-facebook:jar:1.1.0.BUILD-SNAPSHOT:compile
+[DEBUG]       org.springframework.social:spring-social-config:jar:1.1.0.BUILD-SNAPSHOT:compile
+[DEBUG]    org.springframework.social:spring-social-facebook-web:jar:1.1.0.BUILD-SNAPSHOT:compile
+[DEBUG]    org.springframework.social:spring-social-twitter:jar:1.1.0.BUILD-SNAPSHOT:compile
+[DEBUG]       org.springframework.security:spring-security-crypto:jar:3.1.4.RELEASE:compile
+[DEBUG]    org.springframework.social:spring-social-linkedin:jar:1.0.0.BUILD-SNAPSHOT:compile
+[DEBUG]    org.springframework.social:spring-social-web:jar:1.1.0.BUILD-SNAPSHOT:compile
+[DEBUG]    org.springframework.social:spring-social-security:jar:1.1.0.BUILD-SNAPSHOT:compile
+[DEBUG]    org.codehaus.groovy:groovy:jar:2.0.4:compile
+[DEBUG]       antlr:antlr:jar:2.7.7:compile
+[DEBUG]       org.ow2.asm:asm-tree:jar:4.0:compile
+[DEBUG]       org.ow2.asm:asm-commons:jar:4.0:compile
+[DEBUG]       org.ow2.asm:asm:jar:4.0:compile
+[DEBUG]       org.ow2.asm:asm-util:jar:4.0:compile
+[DEBUG]       org.ow2.asm:asm-analysis:jar:4.0:compile
+[DEBUG]    org.codehaus.groovy:groovy-templates:jar:2.0.4:compile
+[DEBUG]       org.codehaus.groovy:groovy-xml:jar:2.0.4:compile
+[DEBUG]    javax.validation:validation-api:jar:1.0.0.GA:compile
+[DEBUG]    org.hibernate:hibernate-validator:jar:4.3.1.Final:compile
+[DEBUG]       org.jboss.logging:jboss-logging:jar:3.1.0.CR2:compile
+[DEBUG]    org.freemarker:freemarker:jar:2.3.19:compile
+[DEBUG]    ru.circumflex:circumflex-ftl:jar:2.5:compile
+[DEBUG]       ru.circumflex:circumflex-web:jar:2.5:compile
+[DEBUG]          ru.circumflex:circumflex-core:jar:2.5:compile
+[DEBUG]          javax.servlet:servlet-api:jar:2.5:compile
+[DEBUG]          org.eclipse.jetty:jetty-webapp:jar:7.4.2.v20110526:compile
+[DEBUG]             org.eclipse.jetty:jetty-xml:jar:7.4.2.v20110526:compile
+[DEBUG]       ru.circumflex:circumflex-markeven:jar:2.5:compile
+[DEBUG]       org.scala-lang:scala-compiler:jar:2.9.2:compile
+[DEBUG]       org.scalatest:scalatest_2.9.2:jar:1.8:compile
+[DEBUG]    opensymphony:sitemesh:jar:2.4.2:compile
+[DEBUG]    org.tuckey:urlrewritefilter:jar:4.0.4:compile
+[DEBUG]    org.apache.ibatis:ibatis-sqlmap:jar:2.3.4.726:compile
+[DEBUG]    javax.persistence:persistence-api:jar:1.0:compile
+[DEBUG]    org.compass-project:compass:jar:2.2.0:compile
+[DEBUG]       org.apache.lucene:lucene-core:jar:2.4.1:compile
+[DEBUG]    net.sf.ehcache:ehcache:pom:2.4.7:compile
+[DEBUG]       net.sf.ehcache:ehcache-core:jar:2.4.7:compile
+[DEBUG]    net.sf.ehcache:ehcache-web:jar:2.0.4:compile
+[DEBUG]    org.hibernate:hibernate-core:jar:3.6.10.Final:compile
+[DEBUG]       dom4j:dom4j:jar:1.6.1:compile
+[DEBUG]       org.hibernate:hibernate-commons-annotations:jar:3.2.0.Final:compile
+[DEBUG]       org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.1.Final:compile
+[DEBUG]       javax.transaction:jta:jar:1.1:compile
+[DEBUG]    org.javassist:javassist:jar:3.17.1-GA:compile
+[DEBUG]    com.taco:tacosoft-base:jar:1.0:compile
+[DEBUG]       org.beanshell:bsh:jar:2.0b4:compile
+[DEBUG]    com.taco:tacosoft-gut:jar:1.0:compile
+[DEBUG]       com.ctreber:aclib:jar:2.1:compile
+[DEBUG]    com.ngweb.gutx:s3:jar:0.0.2-SNAPSHOT:compile
+[DEBUG]       net.java.dev.jets3t:jets3t:jar:0.9.0:compile
+[DEBUG]          com.jamesmurty.utils:java-xmlbuilder:jar:0.4:compile
+[DEBUG]    com.ngweb.sideref:sideref-legacy-java:jar:1.0.1-SNAPSHOT:compile
+[DEBUG]    com.google.code.facebookapi:facebook-java-api:jar:3.0.2:compile
+[DEBUG]       com.google.code.facebookapi:facebook-java-api-schema:jar:3.0.2:compile
+[DEBUG]          org.jvnet.jaxb2_commons:runtime:jar:0.4.1.5:compile
+[DEBUG]       org.json:json:jar:20080701:compile
+[DEBUG]       com.google.code.facebookapi:facebook-java-api-annotation-processor:jar:3.0.2:compile
+[DEBUG]       com.sun.xml.bind:jaxb-impl:jar:2.1.9:compile
+[DEBUG]          javax.xml.bind:jaxb-api:jar:2.1:compile
+[DEBUG]             javax.xml.stream:stax-api:jar:1.0-2:compile
+[DEBUG]    com.restfb:restfb:jar:1.6.9:compile
+[DEBUG]    org.twitter4j:twitter4j-core:jar:3.0.3:compile
+[DEBUG]    net.tanesha.recaptcha4j:recaptcha4j:jar:0.0.7:compile
+[DEBUG]    org.owasp:csrfguard:jar:3.0.0.503-ALPHA:compile
+[DEBUG]       commons-fileupload:commons-fileupload:jar:1.2.2:compile
+[DEBUG]       javax.servlet.jsp:jsp-api:jar:2.1:compile
+[DEBUG]    org.jsoup:jsoup:jar:1.7.2:compile
+[DEBUG]    com.ngweb:spring-mvc-grails-goodies:jar:0.2.0-SNAPSHOT:compile
+[DEBUG]       org.grails:grails-spring:jar:2.1.1:compile
+[DEBUG]          org.grails:grails-bootstrap:jar:2.1.1:compile
+[DEBUG]             com.google.protobuf:protobuf-java:jar:2.4.1:compile
+[DEBUG]             org.bouncycastle:bcpg-jdk15:jar:1.45:compile
+[DEBUG]                org.bouncycastle:bcprov-jdk15:jar:1.45:compile
+[DEBUG]             org.apache.ant:ant-launcher:jar:1.8.2:compile
+[DEBUG]             com.googlecode.json-simple:json-simple:jar:1.1:compile
+[DEBUG]             jline:jline:jar:1.0:compile
+[DEBUG]             org.apache.ant:ant:jar:1.8.2:compile
+[DEBUG]             org.apache.ivy:ivy:jar:2.2.0:compile
+[DEBUG]             org.springframework.uaa:org.springframework.uaa.client:jar:1.0.1.RELEASE:compile
+[DEBUG]             org.apache.ant:ant-trax:jar:1.7.1:compile
+[DEBUG]             net.java.dev.jna:jna:jar:3.2.3:compile
+[DEBUG]             org.apache.ant:ant-junit:jar:1.8.2:compile
+[DEBUG]             org.codehaus.gant:gant_groovy1.8:jar:1.9.6:compile
+[DEBUG]                commons-cli:commons-cli:jar:1.2:compile
+[DEBUG]          org.slf4j:jcl-over-slf4j:jar:1.6.2:compile
+[DEBUG]       org.grails:grails-web:jar:2.1.1:compile
+[DEBUG]          com.googlecode.concurrentlinkedhashmap:concurrentlinkedhashmap-lru:jar:1.2_jdk5:compile
+[DEBUG]          org.grails:grails-core:jar:2.1.1:compile
+[DEBUG]             oro:oro:jar:2.0.8:runtime
+[DEBUG]             xalan:serializer:jar:2.7.1:runtime
+[DEBUG]             org.springframework:spring-jms:jar:3.1.2.RELEASE:runtime
+[DEBUG]             org.springframework:spring-asm:jar:3.1.2.RELEASE:compile
+[DEBUG]             asm:asm:jar:3.1:runtime
+[DEBUG]             cglib:cglib:jar:2.2:runtime
+[DEBUG]          xpp3:xpp3_min:jar:1.1.4c:compile
+[DEBUG]          commons-el:commons-el:jar:1.0:compile
+[DEBUG]       org.grails:grails-plugin-servlets:jar:2.1.1:compile
+[DEBUG]          org.grails:grails:jar:2.1.1:compile
+[DEBUG]       org.grails:grails-plugin-url-mappings:jar:2.1.1:compile
+[DEBUG]          org.grails:grails-plugin-controllers:jar:2.1.1:compile
+[DEBUG]    org.mozilla:rhino:jar:1.7R4:compile
+[DEBUG]    com.ngweb.sideref:jmdict-common:jar:1.0:compile
+[DEBUG]    jkanji:xml:jar:0.2:compile
+[DEBUG]    castor:base:jar:0.9.3.9:compile
+[DEBUG]    castor:xml:jar:0.9.3.9:compile
+[DEBUG]    com.chesspresso:chesspresso:jar:1.0:compile
+[DEBUG]    org.eclipse.jetty:jetty-server:jar:7.6.10.v20130312:compile
+[DEBUG]       org.eclipse.jetty.orbit:javax.servlet:jar:2.5.0.v201103041518:compile
+[DEBUG]       org.eclipse.jetty:jetty-http:jar:7.6.10.v20130312:compile
+[DEBUG]          org.eclipse.jetty:jetty-io:jar:7.6.10.v20130312:compile
+[DEBUG]    org.eclipse.jetty:jetty-servlet:jar:7.6.10.v20130312:compile
+[DEBUG]       org.eclipse.jetty:jetty-security:jar:7.6.10.v20130312:compile
+[DEBUG]    org.eclipse.jetty:jetty-servlets:jar:7.6.10.v20130312:compile
+[DEBUG]       org.eclipse.jetty:jetty-client:jar:7.6.10.v20130312:compile
+[DEBUG]       org.eclipse.jetty:jetty-util:jar:7.6.10.v20130312:compile
+[DEBUG]    org.eclipse.jetty:jetty-continuation:jar:7.6.10.v20130312:compile
+[DEBUG]    org.mortbay.jetty:jsp-2.1-glassfish:jar:9.1.1.B60.25.p2:compile
+[DEBUG]       org.eclipse.jdt:core:jar:3.1.1:compile
+[DEBUG]       org.mortbay.jetty:jsp-api-2.1-glassfish:jar:9.1.1.B60.25.p2:compile
+[DEBUG]       ant:ant:jar:1.6.5:compile
+[DEBUG]    org.apache.tomcat:el-api:jar:6.0.35:compile
+[DEBUG]    org.apache.tomcat:jasper-el:jar:6.0.35:compile
+[DEBUG]    org.springframework:spring-test:jar:3.2.3.RELEASE:test
+[DEBUG]    junit:junit:jar:4.11:compile
+[DEBUG]       org.hamcrest:hamcrest-core:jar:1.3:compile
+[DEBUG]    org.testng:testng:jar:5.14.10:test
+[DEBUG]       com.beust:jcommander:jar:1.12:test
+[DEBUG]       org.yaml:snakeyaml:jar:1.6:test
+[DEBUG]    org.scala-tools.testing:specs_2.9.3:jar:1.6.9:test
+[DEBUG]    org.mockito:mockito-all:jar:1.8.5:test
+[DEBUG]    com.h2database:h2:jar:1.3.170:test
+[DEBUG]    org.subethamail:subethasmtp-wiser:jar:1.2:test
+[DEBUG]       org.subethamail:subethasmtp-smtp:jar:1.2:test
+[DEBUG]    com.ngweb:ngweb-test-helpers:jar:1.0.1-SNAPSHOT:compile
+[DEBUG]    org.scala-lang:jline:jar:2.9.3:runtime
+[DEBUG]       org.fusesource.jansi:jansi:jar:1.4:compile
+[DEBUG]    postgresql:postgresql:jar:9.1-901.jdbc4:compile
+[DEBUG]    org.scala-lang:scala-library:jar:2.9.3:compile
+[DEBUG]    org.specs2:specs2_2.9.3:jar:1.12.4.1:test
+[DEBUG]       org.specs2:specs2-scalaz-core_2.9.3:jar:6.0.1:test
+[DEBUG]    org.scalatest:scalatest_2.9.3:jar:1.9.1:test
+[DEBUG]    org.slf4j:slf4j-api:jar:1.7.5:compile
+[DEBUG]    ch.qos.logback:logback-classic:jar:1.0.9:compile
+[DEBUG]       ch.qos.logback:logback-core:jar:1.0.9:compile
+
