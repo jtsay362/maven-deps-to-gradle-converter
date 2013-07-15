@@ -20,42 +20,46 @@ Takes the top section of "mvn -X compile" output like this:
 
 And turns it into:
 
+    def addDependencies(configurationName, depInfo) {
+      depInfo.each {
+        def group = it.key
+        def nameToInfoMap = it.value
+
+        nameToInfoMap.each {
+          def name = it.key
+          def info = it.value
+          dependencies.add(configurationName, [group: group, name: name] + info)
+        }
+      }
+    }
+
     def compileDepVersions = [
       'commons-beanutils' : [
-       'commons-beanutils' : '1.8.3'
+       'commons-beanutils' : [version: '1.8.3']
       ],
       'commons-codec' : [
-       'commons-codec' : '1.7'
+       'commons-codec' : [version: '1.7']
       ],
       'commons-collections' : [
-       'commons-collections' : '3.2.1'
+       'commons-collections' : [version: '3.2.1']
       ],
       ...
     ]
 
     def testDepVersions = [
       'org.scalatest' : [
-       'scalatest_2.9.3' : '1.9.1'
+       'scalatest_2.9.3' : [version: '1.9.1']
       ],
       'org.specs2' : [
-       'specs2_2.9.3' : '1.12.4.1'
+       'specs2_2.9.3' : [version: '1.12.4.1']
       ],
       ...
     ]
 
-    dependencies {
-      compile group: 'commons-beanutils', name: 'commons-beanutils', version: compileDepVersions['commons-beanutils']['commons-beanutils']
-
-      compile group: 'commons-codec', name: 'commons-codec', version: compileDepVersions['commons-codec']['commons-codec']
-
-      compile group: 'commons-collections', name: 'commons-collections', version: compileDepVersions['commons-collections']['commons-collections']
-
-      ...
-
-      testCompile group: 'org.scalatest', name: 'scalatest_2.9.3', version: testDepVersions['org.scalatest']['scalatest_2.9.3']
-
-      testCompile group: 'org.specs2', name: 'specs2_2.9.3', version: testDepVersions['org.specs2']['specs2_2.9.3']
-    }
+    addDependencies('compile', compileDepInfo)
+    addDependencies('testCompile', testDepInfo)
+    addDependencies('runtime', runtimeDepInfo)
+    addDependencies('providedCompile', providedDepInfo)
 
 To run the example:
 
