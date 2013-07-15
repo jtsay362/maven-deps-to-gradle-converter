@@ -12,27 +12,27 @@ class DepsConverter
 
     debug @deps
 
-    build_versions
+    build_dep_info
 
-    debug @versions
+    debug @dep_info
 
-    output_version_maps
+    output_add_dependencies_method
+
+    output_dep_info_maps
 
     puts
 
-    output_dependencies
-
+    output_dependency_additions
   end
 
   private
 
-  def group_location(dep)
-    "#{dep[:scope]}DepVersions['#{dep[:group_id]}']"
+  def dep_info_variable_name(scope)
+    "#{scope}DepInfo"
   end
 
-  def version_location(dep)
-    "#{group_location(dep)}['#{dep[:artifact_id]}']"
-
+  def group_location(dep)
+    "#{dep_info_variable_name(dep[:scope])}['#{dep[:group_id]}']"
   end
 
   def build_deps(deps_filename)
@@ -70,14 +70,14 @@ class DepsConverter
   end
 
 
-  def build_versions
-    @versions = {}
+  def build_dep_info
+    @dep_info = {}
     @deps.each do |dep|
-      scope = @versions[dep[:scope]]
+      scope = @dep_info[dep[:scope]]
 
       if !scope
         scope = {}
-        @versions[dep[:scope]] = scope
+        @dep_info[dep[:scope]] = scope
       end
 
       group = scope[dep[:group_id]]
@@ -90,24 +90,41 @@ class DepsConverter
       group[dep[:artifact_id]] = dep
     end
 
-    @versions
+    @dep_info
   end
 
-  def output_version_maps
+  def output_add_dependencies_method
+    puts <<-HERE
+def addDependencies(configurationName, depInfo) {
+  depInfo.each {
+    def group = it.key
+    def nameToInfoMap = it.value
+    nameToInfoMap.each {
+      def name = it.key
+      def info = it.value
+      dependencies.add(configurationName, [group: group, name: name] + info)
+    }
+  }
+}
+HERE
+    puts
+  end
+
+  def output_dep_info_maps
     SCOPES.each do |scope|
-      output_version_map_for_scope(scope)
+      output_dep_info_map_for_scope(scope)
       puts
     end
   end
 
-  def output_version_map_for_scope(scope)
-    print "def #{scope}DepVersions = ["
+  def output_dep_info_map_for_scope(scope)
+    print "def #{scope}DepInfo = ["
 
     first_group = true
 
-    versions_for_scope = @versions[scope]
+    dep_info_for_scope = @dep_info[scope]
 
-    versions_for_scope.keys.sort.each do |group_id|
+    dep_info_for_scope.keys.sort.each do |group_id|
       if first_group
         puts
         first_group = false
@@ -119,7 +136,7 @@ class DepsConverter
 
       first_version = true
 
-      versions_for_scope[group_id].each_pair do |artifact_id, dep|
+      dep_info_for_scope[group_id].each_pair do |artifact_id, dep|
         if first_version
           puts
         else
@@ -128,7 +145,14 @@ class DepsConverter
 
         first_version = false
 
-        print "    '#{artifact_id}' : '#{dep[:version]}'"
+        print "    '#{artifact_id}' : [version: '#{dep[:version]}'"
+
+        if (dep[:classifier])
+          print ", classifier: '#{dep[:classifier]}'"
+        end
+
+        print ']'
+
       end
 
       puts
@@ -139,41 +163,16 @@ class DepsConverter
     puts ']'
   end
 
-  def output_dependencies
-    puts 'dependencies {'
-    
+  def output_dependency_additions
     SCOPES.each do |scope|
-      output_dependencies_for_scope(scope)
+      output_dependency_addition_for_scope(scope)
     end
-
-    puts '}'    
   end
 
-  def output_dependencies_for_scope(scope)
+  def output_dependency_addition_for_scope(scope)
     configuration = translate_dependency_configuration(scope)
 
-    versions_for_scope = @versions[scope]
-
-    versions_for_scope.keys.sort.each do |group_id|
-      artifacts_for_group = versions_for_scope[group_id]
-
-      artifacts_for_group.keys.sort.each do |artifact_id|
-        dep = artifacts_for_group[artifact_id]
-
-        print "  #{configuration} group: '#{group_id}', name: '#{artifact_id}', " +
-                  "version: #{version_location(dep)}"
-
-        if dep[:classifier]
-          print ", classifier: '#{dep[:classifier]}'"
-        end
-
-        puts
-      end
-
-      puts
-    end
-
-    
+    puts "addDependencies('#{configuration}', #{dep_info_variable_name(scope)})"
   end
 
   def debug(msg)
